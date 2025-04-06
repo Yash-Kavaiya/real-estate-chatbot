@@ -1,0 +1,116 @@
+{
+  "name": "ef1c086d-84af-4ba1-910d-461aa9fde5d9",
+  "displayName": "Ask contact ",
+  "form": {
+    "parameters": [ {
+      "displayName": "name",
+      "required": true,
+      "entityType": "@sys.person",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Exciting times ahead! Could I get your name and best contact info so I can\n connect you with a local agent?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter your name like e.g. Rahul Mehta " ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "759877fe-9293-4309-88f0-2e5cc466d079"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter your name like e.g. Rahul Mehta " ]
+              },
+              "languageCode": "en"
+            } ],
+            "enableGenerativeFallback": true,
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "f78aed0f-131b-40c9-b494-3ecdfeb62a30"
+        } ]
+      }
+    }, {
+      "displayName": "contact_info",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Can you share your phone number so I can assist you further?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Your phone number seems incomplete or missing. Could you please share it?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "5355a684-bce0-45b9-97bd-53c46e275501"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Your phone number seems incomplete or missing. Could you please share it?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "77b99a1f-44ac-4031-b6c6-dfffc9d7da2e"
+        } ]
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks for sharing your details, $session.params.name.name  ! We’ll connect with you soon to assist further." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "3edb1dff-2f75-4a39-9d91-c0a583b5bc86"
+  } ]
+}

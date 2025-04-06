@@ -1,0 +1,10 @@
+{
+  "name": "486ddd74-8922-4f9b-a429-092c611db201",
+  "displayName": "Buy",
+  "parameters": [ {
+    "id": "ordinal",
+    "entityType": "@sys.ordinal"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 11
+}

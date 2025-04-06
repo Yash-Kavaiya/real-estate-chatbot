@@ -1,0 +1,32 @@
+{
+  "name": "62217f91-9772-4e8f-90fc-fb2c0834a644",
+  "displayName": "Ask Email",
+  "form": {
+    "parameters": [ {
+      "displayName": "email",
+      "required": true,
+      "entityType": "@sys.email",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "I can keep you updated on market trends and new listings if you’d like.\n Could I grab your email to send updates?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "0480bdb8-a11f-434e-b049-32792b136d0d"
+  } ]
+}

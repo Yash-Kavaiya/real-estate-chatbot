@@ -1,0 +1,159 @@
+{
+  "name": "4f90216d-b9d2-473a-910b-a43c17cf5daf",
+  "displayName": "FAQ",
+  "transitionRoutes": [ {
+    "intent": "FAQ_MortgagePreApproval",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To get pre-approved, you’ll typically need proof of income, employment verification, a credit report, and personal identification. A lender will use this information to\n assess your financial situation and provide a pre-approval letter, which can help you understand\n your budget and show sellers that you’re a serious buyer." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "649d56ca-e72e-4325-8803-fc7ae769333b"
+  }, {
+    "intent": "FAQ_OpenHouse",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Open houses are often listed on real estate websites and local MLS (Multiple Listing Service) listings. I can also connect you with one of our agents who has the\n latest info on upcoming open houses in your preferred areas. Would you like me to put you in\n touch?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "97b237d7-9bd9-49ec-b03a-cf4a5e251760"
+  }, {
+    "intent": "FAQ_DownPayment",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Typically, down payments range from 3% to 20% of the property price. A\r\n conventional mortgage often requires 20%, while some government-backed loans allow for\r\n lower down payments, as low as 3.5%. Your lender can provide specifics based on your\r\n situation. Would you like more details on financing options?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "ef8ace8f-c9f6-4fbe-ac5c-663152c4a8a3"
+  }, {
+    "intent": "FAQ_CloseTime",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The closing process generally takes between 30 to 60 days, depending\r\n on factors like the loan type, property appraisal, and inspection results. Your agent and lender\r\n will guide you through each step. Let me know if you'd like help connecting with an agent to\r\n discuss this in detail." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "71d20807-a8a9-4f1a-861d-0000aefb7b15"
+  }, {
+    "intent": "FAQ_PrepareForSale",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Preparing your home for sale can involve several steps: decluttering,\r\n cleaning, making small repairs, and staging to make the property look its best. Enhancing curb\r\n appeal is also important to make a strong first impression. An agent can provide a tailored plan\r\n based on your home and goals—let me know if you’d like to be connected with one!”\r\n" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "b0a8be43-2071-485e-bce5-af21a68e806f"
+  }, {
+    "intent": "FAQ_SellingFees",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Selling fees typically include agent commission (around 5-6% of the sale\r\n price), closing costs, staging costs, and possible repair expenses. Your agent can give you a\r\n clearer estimate based on your specific situation. I’d be happy to help you get in touch with an\r\n agent if you’d like." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "e16fac16-bc8a-4910-b5e3-ad17e4ffe4f9"
+  }, {
+    "intent": "FAQ_PetPolicy",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Many rental properties have specific pet policies—some allow pets with a\r\n deposit or monthly pet fee, while others may have restrictions on the type or size of pets. I can\r\n connect you with a rental specialist who can help you find pet-friendly options if you'd like." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "148521f2-484e-4d41-b3aa-688f0385e394"
+  }, {
+    "intent": "FAQ_SecurityDeposit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Security deposits typically range from one to two months' rent, depending\r\n on the property and landlord requirements. Some landlords may adjust the deposit based on\r\n your credit history or if you have pets. Let me know if you’d like assistance finding rentals with\r\n deposit details." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "5cba2a0e-649b-4577-9540-6a1fb0c498bb"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "fbb1ec98-cbf3-4fd3-9992-014e513b2500"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6d41e0d3-6621-449f-bedc-936c85178614"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "transitionRouteGroups": [ "FAQ_Group" ],
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "c2142c43-0539-4e43-be7b-4fac913af72a",
+    "languageCode": "en"
+  } ]
+}

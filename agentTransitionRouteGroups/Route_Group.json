@@ -1,0 +1,117 @@
+{
+  "name": "c0632e1f-c833-4cab-b0fd-a4cd3b910875",
+  "displayName": "Route_Group",
+  "transitionRoutes": [ {
+    "intent": "FAQ_CloseTime",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The closing process generally takes between 30 to 60 days, depending\n on factors like the loan type, property appraisal, and inspection results. Your agent and lender\n will guide you through each step. Let me know if you'd like help connecting with an agent to\n discuss this in detail" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "3b602632-de56-4c3c-8ce6-9c332cbbdb63"
+  }, {
+    "intent": "FAQ_MortgagePreApproval",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To get pre-approved, you’ll typically need proof of income, employment\n verification, a credit report, and personal identification. A lender will use this information to\n assess your financial situation and provide a pre-approval letter, which can help you understand\n your budget and show sellers that you’re a serious buyer" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "1227a905-ffd2-4944-a450-4d6babf55a6f"
+  }, {
+    "intent": "FAQ_OpenHouse",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Open houses are often listed on real estate websites and local MLS\r\n (Multiple Listing Service) listings. I can also connect you with one of our agents who has the\r\n latest info on upcoming open houses in your preferred areas. Would you like me to put you in\r\n touch?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "69dbf596-8337-45df-9630-1389bf8a19e5"
+  }, {
+    "intent": "FAQ_DownPayment",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Typically, down payments range from 3% to 20% of the property price. A\r\n conventional mortgage often requires 20%, while some government-backed loans allow for\r\n lower down payments, as low as 3.5%. Your lender can provide specifics based on your\r\n situation. Would you like more details on financing options?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "53ff5d8b-5336-4aab-925d-dbfe6f782f38"
+  }, {
+    "intent": "FAQ_PrepareForSale",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Preparing your home for sale can involve several steps: decluttering,\r\n cleaning, making small repairs, and staging to make the property look its best. Enhancing curb\r\n appeal is also important to make a strong first impression. An agent can provide a tailored plan\r\n based on your home and goals—let me know if you’d like to be connected with one!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "c037ffbe-9fa7-4d3a-a2f2-6b00add74715"
+  }, {
+    "intent": "FAQ_SellingFees",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "“Selling fees typically include agent commission (around 5-6% of the sale\r\n price), closing costs, staging costs, and possible repair expenses. Your agent can give you a\r\n clearer estimate based on your specific situation. I’d be happy to help you get in touch with an\r\n agent if you’d like." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "dea42def-eb0b-4a45-84ca-a8593604e56d"
+  }, {
+    "intent": "FAQ_PetPolicy",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Many rental properties have specific pet policies—some allow pets with a\r\n deposit or monthly pet fee, while others may have restrictions on the type or size of pets. I can\r\n connect you with a rental specialist who can help you find pet-friendly options if you'd like" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "5f4fbc40-0cb5-4f2a-90b6-d16d358c0db7"
+  }, {
+    "intent": "FAQ_SecurityDeposit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Security deposits typically range from one to two months' rent, depending\r\n on the property and landlord requirements. Some landlords may adjust the deposit based on\r\n your credit history or if you have pets. Let me know if you’d like assistance finding rentals with\r\n deposit details." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "af97a8ca-7de7-40e5-a071-856143b08231"
+  } ]
+}

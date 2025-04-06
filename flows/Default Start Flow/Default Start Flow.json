@@ -1,0 +1,104 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hi there! I’m Real Estate Virtual Assistant Bot , your virtual real estate assistant. How can I help you today? Are\n you looking to buy, sell, rent, or just exploring your options? I can also help with common questions about the real estate process", "Hello! I’m your Virtual Real Estate Assistant Bot. Whether you’re buying, selling, renting, or simply checking out options, I’m here to help. I can also answer your questions about navigating the real estate process. What can I do for you today?", "Hi there! I’m the Real Estate Virtual Assistant Bot, ready to assist with your real estate needs. Are you looking to buy, sell, rent, or explore? I can also clarify common queries about the real estate process. How can I assist you today?", "Greetings! I’m your Real Estate Virtual Assistant Bot. Are you planning to buy, sell, rent, or just exploring the market? I’m also equipped to answer any questions you might have about the real estate process. How may I assist you?", "Hi! I’m the Real Estate Virtual Assistant Bot, your go-to helper for all things real estate. Whether you're looking to buy, sell, rent, or simply exploring, I’m here to guide you. Need help with real estate questions? Let me know!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Buy"
+            }, {
+              "text": "Sell"
+            }, {
+              "text": "Rent"
+            }, {
+              "text": "Just Browsing"
+            }, {
+              "text": "FAQs"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      },
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "e596c7c0-decc-47c4-be41-6f5b16303b71"
+  }, {
+    "intent": "Buy",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Buyer",
+    "name": "01ce6b92-e4cd-4815-8214-b4fe226c4cc3"
+  }, {
+    "intent": "Rent",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Renter",
+    "name": "dbfe16c3-eebd-4c72-8e97-aa22030821e4"
+  }, {
+    "intent": "Sell",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Seller",
+    "name": "a5ad1ab6-1584-43f7-9e0d-a992939118be"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0e46a19a-6b7b-4464-bfee-65b72ab9fce0"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No worries! Feel free to browse, and whenever you’re ready, just reach out here again. I’ll be here to help!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "c38ca09e-a308-4d51-beb0-a624f2c00483"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "0eafc987-f4f5-44aa-8887-5291f7c08227",
+    "languageCode": "en"
+  } ],
+  "agentTransitionRouteGroups": [ "Route_Group" ]
+}

@@ -1,0 +1,115 @@
+{
+  "name": "62c85946-8dcd-49af-ad71-a46919d3f008",
+  "displayName": "Ask contact info",
+  "form": {
+    "parameters": [ {
+      "displayName": "name",
+      "required": true,
+      "entityType": "@sys.person",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Could you share your name ?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter your name like e.g. Rahul Mehta " ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "808d5664-7f22-4629-9dbc-91b8fa0d972f"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter your name like e.g. Rahul Mehta " ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "122e5202-2b52-4e2f-bef5-ecafa335a8a6"
+        } ]
+      }
+    }, {
+      "displayName": "contact_info",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Could you share your contact info?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please share your contact info?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "bc376b4f-cd31-4af3-a81a-c5411243f469"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please share your contact info?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "c36fa929-36a0-4659-ba56-a35875303871"
+        } ]
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks for sharing your details, $session.params.name.name  ! We’ll connect with you soon to assist further." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "be15bd62-7c84-4524-bad4-b361aadc8b7d"
+  } ]
+}

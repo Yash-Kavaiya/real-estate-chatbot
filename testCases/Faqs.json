@@ -1,0 +1,214 @@
+{
+  "name": "5029fd9f-ab48-4c49-97ef-9326129a8cd1",
+  "displayName": "Faqs",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "What do I need to get pre-approved for a mortgage?”"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "FAQ_MortgagePreApproval"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "To get pre-approved, you’ll typically need proof of income, employment\n verification, a credit report, and personal identification. A lender will use this information to\n assess your financial situation and provide a pre-approval letter, which can help you understand\n your budget and show sellers that you’re a serious buyer" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How do I find out about open houses?”"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "FAQ_OpenHouse"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Open houses are often listed on real estate websites and local MLS\r\n (Multiple Listing Service) listings. I can also connect you with one of our agents who has the\r\n latest info on upcoming open houses in your preferred areas. Would you like me to put you in\r\n touch?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "“How much do I need for a down payment?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "FAQ_DownPayment"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Typically, down payments range from 3% to 20% of the property price. A\r\n conventional mortgage often requires 20%, while some government-backed loans allow for\r\n lower down payments, as low as 3.5%. Your lender can provide specifics based on your\r\n situation. Would you like more details on financing options?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How long does it take to close on a property?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "FAQ_CloseTime"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "The closing process generally takes between 30 to 60 days, depending\n on factors like the loan type, property appraisal, and inspection results. Your agent and lender\n will guide you through each step. Let me know if you'd like help connecting with an agent to\n discuss this in detail" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How do I prepare my home for sale?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "FAQ_PrepareForSale"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Preparing your home for sale can involve several steps: decluttering,\r\n cleaning, making small repairs, and staging to make the property look its best. Enhancing curb\r\n appeal is also important to make a strong first impression. An agent can provide a tailored plan\r\n based on your home and goals—let me know if you’d like to be connected with one!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "What fees should I expect when selling a home?”"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "FAQ_SellingFees"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "“Selling fees typically include agent commission (around 5-6% of the sale\r\n price), closing costs, staging costs, and possible repair expenses. Your agent can give you a\r\n clearer estimate based on your specific situation. I’d be happy to help you get in touch with an\r\n agent if you’d like." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "“Are pets allowed in most rental properties?”"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "FAQ_PetPolicy"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Many rental properties have specific pet policies—some allow pets with a\r\n deposit or monthly pet fee, while others may have restrictions on the type or size of pets. I can\r\n connect you with a rental specialist who can help you find pet-friendly options if you'd like" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How much is the typical security deposit?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "FAQ_SecurityDeposit"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Security deposits typically range from one to two months' rent, depending\r\n on the property and landlord requirements. Some landlords may adjust the deposit based on\r\n your credit history or if you have pets. Let me know if you’d like assistance finding rentals with\r\n deposit details." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1731951077,
+    "nanos": 150218000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

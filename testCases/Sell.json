@@ -1,0 +1,223 @@
+{
+  "name": "db0102b0-07bc-4190-9bfb-fd646aec19ad",
+  "displayName": "Sell",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hello"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi! I’m the Real Estate Virtual Assistant Bot, your go-to helper for all things real estate. Whether you're looking to buy, sell, rent, or simply exploring, I’m here to guide you. Need help with real estate questions? Let me know!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Sell"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi there! I’m the Real Estate Virtual Assistant Bot, ready to assist with your real estate needs. Are you looking to buy, sell, rent, or explore? I can also clarify common queries about the real estate process. How can I assist you today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How do I start selling my apartment?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Sell"
+      },
+      "currentPage": {
+        "name": "Ask seller details",
+        "flow": "Seller"
+      },
+      "textResponses": [ {
+        "text": [ "Selling a home is a big decision, and I’m here to help. Could you tell me a bit about your property?" ]
+      }, {
+        "text": [ "Where is your property located?" ]
+      } ],
+      "currentFlow": {
+        "name": "Seller"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Pune"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask seller details",
+        "flow": "Seller"
+      },
+      "textResponses": [ {
+        "text": [ "Anything special about your home, like a renovated kitchen or spacious backyard?" ]
+      } ],
+      "currentFlow": {
+        "name": "Seller"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Backyard"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask seller details",
+        "flow": "Seller"
+      },
+      "textResponses": [ {
+        "text": [ "Do you have a price in mind for your home?" ]
+      } ],
+      "currentFlow": {
+        "name": "Seller"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "5000"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask seller details",
+        "flow": "Seller"
+      },
+      "textResponses": [ {
+        "text": [ "Are you looking to list soon, or still exploring options?" ]
+      } ],
+      "currentFlow": {
+        "name": "Seller"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "today"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask contact info",
+        "flow": "Seller"
+      },
+      "textResponses": [ {
+        "text": [ "Could you share your name ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Seller"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yash"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask contact info",
+        "flow": "Seller"
+      },
+      "textResponses": [ {
+        "text": [ "Could you share your contact info?" ]
+      } ],
+      "currentFlow": {
+        "name": "Seller"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "93893839"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for sharing your details, yash  ! We’ll connect with you soon to assist further." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1731944566,
+    "nanos": 674294000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

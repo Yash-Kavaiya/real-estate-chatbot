@@ -1,0 +1,222 @@
+{
+  "name": "460ae180-035e-4ca7-a41c-f0830bd85c98",
+  "displayName": "Rent",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hello"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi! I’m the Real Estate Virtual Assistant Bot, your go-to helper for all things real estate. Whether you're looking to buy, sell, rent, or simply exploring, I’m here to guide you. Need help with real estate questions? Let me know!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Rent"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Rent"
+      },
+      "currentPage": {
+        "name": "Ask rent details",
+        "flow": "Renter"
+      },
+      "textResponses": [ {
+        "text": [ "What type of rental are you looking for?" ]
+      }, {
+        "text": [ "what city or neighborhood?" ]
+      } ],
+      "currentFlow": {
+        "name": "Renter"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Pune"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask rent details",
+        "flow": "Renter"
+      },
+      "textResponses": [ {
+        "text": [ "Are you looking for an apartment, house, or something else? " ]
+      } ],
+      "currentFlow": {
+        "name": "Renter"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "2 BHK"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask rent details",
+        "flow": "Renter"
+      },
+      "textResponses": [ {
+        "text": [ "What’s your budget?" ]
+      } ],
+      "currentFlow": {
+        "name": "Renter"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "500"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask rent details",
+        "flow": "Renter"
+      },
+      "textResponses": [ {
+        "text": [ "Do you need anything specific, like a pet-friendly place or proximity to transit?" ]
+      } ],
+      "currentFlow": {
+        "name": "Renter"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "2 BHK"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask contact info",
+        "flow": "Renter"
+      },
+      "textResponses": [ {
+        "text": [ "Perfect! Let me grab your details so I can connect you\n with a rental specialist.”" ]
+      }, {
+        "text": [ "Could you share your name ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Renter"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Yash"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask contact info",
+        "flow": "Renter"
+      },
+      "textResponses": [ {
+        "text": [ "Could you share your contact info?" ]
+      } ],
+      "currentFlow": {
+        "name": "Renter"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "name",
+        "value": {
+          "name": "Yash",
+          "original": "Yash"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "82982928"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for sharing your details, Yash  ! We’ll connect with you soon to assist further." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "contact_info",
+        "value": "82982928"
+      }, {
+        "key": "name",
+        "value": {
+          "name": "Yash",
+          "original": "Yash"
+        }
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1731944705,
+    "nanos": 743051000
+  },
+  "testConfig": {
+    "trackingParameters": [ "name", "contact_info" ],
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

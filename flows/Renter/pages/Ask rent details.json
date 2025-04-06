@@ -1,0 +1,120 @@
+{
+  "name": "1f5352c4-0d29-483b-9847-95465b3338d7",
+  "displayName": "Ask rent details",
+  "form": {
+    "parameters": [ {
+      "displayName": "location",
+      "required": true,
+      "entityType": "@sys.geo-city",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "what city or neighborhood?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    }, {
+      "displayName": "rental_type",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Are you looking for an apartment, house, or something else? " ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    }, {
+      "displayName": "budget",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What’s your budget?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter valid  budget details ?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "3e22d3f9-de29-4224-8b40-7345dc1cac8c"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter valid  budget details ?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "4972229d-8f52-4082-b0e4-9af545239a64"
+        } ]
+      }
+    }, {
+      "displayName": "preferences",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Do you need anything specific, like a pet-friendly place or proximity to transit?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Perfect! Let me grab your details so I can connect you\n with a rental specialist.”" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Ask contact info",
+    "name": "b0e97f18-8901-49ca-9e43-732fc032766f"
+  } ]
+}

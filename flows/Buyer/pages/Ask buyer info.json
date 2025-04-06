@@ -1,0 +1,233 @@
+{
+  "name": "dd510876-75f6-497c-a104-6245c693fb0f",
+  "displayName": "Ask buyer info",
+  "form": {
+    "parameters": [ {
+      "displayName": "location",
+      "required": true,
+      "entityType": "@sys.geo-city",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What’s your ideal neighborhood or city?", "What’s your preferred location or city ? " ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "It seems like the location entered isn’t valid. Can you provide your ideal neighborhood or city one more time?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "6036afb9-cd02-424d-9d8b-8c20bab4c639"
+        }, {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "It seems like the location entered isn’t valid. Can you provide your ideal neighborhood or city one more time?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "f10b1b2a-4898-4540-9707-e49f8fcbd307"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "It seems like the location entered isn’t valid. Can you provide your ideal neighborhood or city one more time?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "enableGenerativeFallback": true,
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "00afb3cc-4b99-45d4-ad29-f0a7d68b14c4"
+        } ]
+      }
+    }, {
+      "displayName": "price_range",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Do you have a price range in mind?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter valid price range " ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "cce74b38-4083-4ac7-8ca3-8435801d80a5"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter valid price range " ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "4f2d4e9e-124b-4deb-82a4-d402f4be1f28"
+        } ]
+      }
+    }, {
+      "displayName": "bedrooms",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "How many bedrooms are you looking for?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn’t understand the number of bedrooms you’re looking for. Could you specify again, like 1 RK or 2 BHK?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "5efc5a89-555a-4245-8433-115841443b6e"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn’t understand the number of bedrooms you’re looking for. Could you specify again, like 1 RK or 2 BHK?" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "6b9b1275-e1a7-487a-a989-b15e260e9647"
+        } ]
+      }
+    }, {
+      "displayName": "preferences",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Any specific preferences, like a backyard, garage, or proximity to schools?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    }, {
+      "displayName": "timeline",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Are you looking to move soon, or still exploring?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I couldn’t understand your timeline. Could you please enter again." ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "066b589e-54d1-43d4-a172-07ea4c9ecb41"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I couldn’t understand your timeline. Could you please enter again." ]
+              },
+              "languageCode": "en"
+            } ],
+            "enableGenerativeFallback": true,
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "37be91c5-afd6-468b-ae10-41bebcedfa8d"
+        } ]
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask contact ",
+    "name": "6174a501-94be-4706-945d-857850cd90f6"
+  } ],
+  "agentTransitionRouteGroups": [ "Route_Group" ]
+}

@@ -1,0 +1,79 @@
+{
+  "fallbackSettings": {
+    "selectedPrompt": "Fallback",
+    "promptTemplates": [ {
+      "displayName": "Fallback",
+      "promptText": "You are a friendly Real Estate Virtual Assistant Bot: assistant that helps humans with $flow-description.\n\nIn particular, you can $route-descriptions.\n\nThe conversation between the human and you so far was:\n${conversation USER:\"Human:\" AGENT:\"AI\"}\n\nThen, the human asked:\n$last-user-utterance\n\nYou say:\n Cases Where Contact Info Isn’t Provided- **Bot Response**: “No worries! Feel free to browse, and whenever you’re ready, just reach out\n here again. I’ll be here to help!”\n If User Requests Listings Directly- **Bot Response**: “I don’t have direct listings at the moment, but I can connect you with an\n agent who has all the latest information. Can I grab your contact info to make the introduction?"
+    } ]
+  },
+  "generativeSafetySettings": {
+    "raiSettings": {
+      "categoryFilters": [ {
+        "category": "DANGEROUS_CONTENT",
+        "filterLevel": "BLOCK_FEW"
+      }, {
+        "category": "SEXUALLY_EXPLICIT_CONTENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HARASSMENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HATE_SPEECH",
+        "filterLevel": "BLOCK_SOME"
+      } ]
+    },
+    "defaultRaiSettings": {
+      "categoryFilters": [ {
+        "category": "DANGEROUS_CONTENT",
+        "filterLevel": "BLOCK_FEW"
+      }, {
+        "category": "SEXUALLY_EXPLICIT_CONTENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HARASSMENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HATE_SPEECH",
+        "filterLevel": "BLOCK_SOME"
+      } ]
+    },
+    "responsibleAiFilters": [ {
+      "category": "DANGEROUS_CONTENT",
+      "filterLevel": "MINIMAL_BLOCKING"
+    }, {
+      "category": "SEXUALLY_EXPLICIT_CONTENT",
+      "filterLevel": "MODERATE_BLOCKING"
+    }, {
+      "category": "HARASSMENT",
+      "filterLevel": "MODERATE_BLOCKING"
+    }, {
+      "category": "HATE_SPEECH",
+      "filterLevel": "MODERATE_BLOCKING"
+    } ],
+    "defaultResponsibleAiFilters": [ {
+      "category": "DANGEROUS_CONTENT",
+      "filterLevel": "MINIMAL_BLOCKING"
+    }, {
+      "category": "SEXUALLY_EXPLICIT_CONTENT",
+      "filterLevel": "MODERATE_BLOCKING"
+    }, {
+      "category": "HARASSMENT",
+      "filterLevel": "MODERATE_BLOCKING"
+    }, {
+      "category": "HATE_SPEECH",
+      "filterLevel": "MODERATE_BLOCKING"
+    } ],
+    "promptSecuritySettings": {
+    
+    }
+  },
+  "languageCode": "en",
+  "knowledgeConnectorSettings": {
+    "mainLlmConfig": {
+    
+    }
+  },
+  "llmModelSettings": {
+    "model": "gemini-pro"
+  }
+}

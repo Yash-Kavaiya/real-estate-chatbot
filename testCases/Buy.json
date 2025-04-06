@@ -1,0 +1,242 @@
+{
+  "name": "ba816dfa-592b-49f0-a070-4112226dfd40",
+  "displayName": "Buy",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi there! I’m Real Estate Virtual Assistant Bot , your virtual real estate assistant. How can I help you today? Are\n you looking to buy, sell, rent, or just exploring your options? I can also help with common questions about the real estate process" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Buy"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Buy"
+      },
+      "currentPage": {
+        "name": "Ask buyer info",
+        "flow": "Buyer"
+      },
+      "textResponses": [ {
+        "text": [ "Great! I’d love to help you find your dream home. Could you tell me what kind of property you’re looking for?" ]
+      }, {
+        "text": [ "What’s your ideal neighborhood or city?" ]
+      } ],
+      "currentFlow": {
+        "name": "Buyer"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Pune"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask buyer info",
+        "flow": "Buyer"
+      },
+      "textResponses": [ {
+        "text": [ "Do you have a price range in mind?" ]
+      } ],
+      "currentFlow": {
+        "name": "Buyer"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "100-200"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask buyer info",
+        "flow": "Buyer"
+      },
+      "textResponses": [ {
+        "text": [ "How many bedrooms are you looking for?" ]
+      } ],
+      "currentFlow": {
+        "name": "Buyer"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "2 BHK"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask buyer info",
+        "flow": "Buyer"
+      },
+      "textResponses": [ {
+        "text": [ "Any specific preferences, like a backyard, garage, or proximity to schools?" ]
+      } ],
+      "currentFlow": {
+        "name": "Buyer"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Backyard"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask buyer info",
+        "flow": "Buyer"
+      },
+      "textResponses": [ {
+        "text": [ "Are you looking to move soon, or still exploring?" ]
+      } ],
+      "currentFlow": {
+        "name": "Buyer"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Today"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask contact ",
+        "flow": "Buyer"
+      },
+      "textResponses": [ {
+        "text": [ "Exciting times ahead! Could I get your name and best contact info so I can\n connect you with a local agent?" ]
+      } ],
+      "currentFlow": {
+        "name": "Buyer"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yash"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ask contact ",
+        "flow": "Buyer"
+      },
+      "textResponses": [ {
+        "text": [ "Can you share your phone number so I can assist you further?" ]
+      } ],
+      "currentFlow": {
+        "name": "Buyer"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "name",
+        "value": {
+          "name": "yash",
+          "original": "yash"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "898889885"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for sharing your details, yash  ! We’ll connect with you soon to assist further." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "name",
+        "value": {
+          "name": "yash",
+          "original": "yash"
+        }
+      }, {
+        "key": "contact_info",
+        "value": "898889885"
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1731944347,
+    "nanos": 364168000
+  },
+  "testConfig": {
+    "trackingParameters": [ "name", "contact_info" ],
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}
